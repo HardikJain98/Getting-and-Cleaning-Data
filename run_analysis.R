@@ -71,5 +71,5 @@ ind_tny_data <- final_Combined_data_mean_sd %>% group_by(`Subject ID`,`Activity 
   summarise(across(!c(1:3),mean))
 
 # 5.2 Write the newly created dataset into a text file
-write.table(ind_tny_data,file = "./data/final output.txt")
+write.table(ind_tny_data,file = "./data/final output.txt",row.names = FALSE)
 
